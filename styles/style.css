@@ -79,9 +79,12 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 34px;
   overflow-y: scroll;
   block-size: 298px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
 }
 
 .content__card-link {
@@ -131,6 +134,7 @@ ol {
 .content__video-card-thumbnail {
   display: block;
   object-fit: cover;
+  object-position: center;
   inline-size: 194px;
   block-size: 103px;
 }
@@ -152,6 +156,7 @@ ol {
 .result__video {
   flex-grow: 1;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -197,7 +202,7 @@ ol {
   border-inline-end: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   font-size: inherit;
   background: transparent;
   appearance: none;
